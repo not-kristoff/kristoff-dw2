@@ -37,6 +37,7 @@ export const pageTitle = "Assignment 01";
         alt="View of the Catskill Mountains near Tannersville"
         class="hero-image"
       />
+    </section>
       <section class="section-activity" id="hike">
         <div class="section-text-panel">
           <h2>Hike</h2>
@@ -165,5 +166,107 @@ export const pageTitle = "Assignment 01";
   /* importing fonts */
   @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+  .page-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header{
+    width:100%;
+  }
+
+  nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    max-width:1200px;
+    padding:.5rem;
+    margin:0 auto;
+  }
+  .nav-branding{
+    margin-top:0;
+  }
+
+  .nav-items{
+    display:flex;
+    gap:1rem;
+  }
+  .nav-btn{
+    background-color: #174A28;
+    color: #FFD1A8;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius:.25rem;
+  }
+
+  .section-hero{
+    width:100%;
+    height:600px;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .hero-image{
+    position: absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+  .hero-text-block{
+    position:relative;
+    z-index:100;
+    background-color: rgba(255, 255, 255, 0.719);
+    width:400px;
+    padding: 32px;
+  }
+  .hero-text-block h1{
+    margin-top:0;
+  }
+
+
+  .section-activity{
+    width:100%;
+    height:500px;
+    max-width:1200px;
+    display:flex;
+
+  }
+.section-reverse{
+  flex-direction: row-reverse;
+}
+
+  .section-text-panel{
+    width:400px;
+    flex-shrink:0;
+    background-color:rgb(219, 219, 219);
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-image{
+    width:400px;
+    flex-grow:1;
+    object-fit: cover;
+  }
   
+
+  .places-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+  }
+
+
+  .places-tile{
+    width:200px;
+    
+    text-decoration:none;
+    background-color:#FFD1A8
+  }
 </style>
