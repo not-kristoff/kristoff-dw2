@@ -167,30 +167,30 @@ export const pageTitle = "Assignment 01";
   @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
   .page-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: "Inter", sans-serif;
+  
   }
   header{
-    width:100%;
+    display:flex;
+    padding:8px;
+    justify-content:center;
+    
   }
 
   nav{
     display:flex;
-    justify-content:space-between;
-    align-items: center;
-    width:100%;
-    max-width:1200px;
-    padding:.5rem;
-    margin:0 auto;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
   }
   .nav-branding{
-    margin-top:0;
+margin:0;
   }
 
   .nav-items{
     display:flex;
-    gap:1rem;
+    gap:16px;
+   
   }
   .nav-btn{
     background-color: #174A28;
@@ -228,45 +228,86 @@ export const pageTitle = "Assignment 01";
     margin-top:0;
   }
 
-
   .section-activity{
-    width:100%;
-    height:500px;
+    display: flex;
     max-width:1200px;
-    display:flex;
 
   }
+  .section-text-panel{
+    width:400px;
+    flex-shrink:0;
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+    justify-content: center;
+    padding:32px;
+    background-color: #F2F2F0;
+  }
+
+.section-text-panel p {
+  margin:0;
+  font-size:16px;
+}
+
+.section-image{
+  width: 100%;
+  height:500px;
+  object-fit:cover;
+}
+
 .section-reverse{
   flex-direction: row-reverse;
 }
 
-  .section-text-panel{
-    width:400px;
-    flex-shrink:0;
-    background-color:rgb(219, 219, 219);
-    padding:2rem;
-    display:flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .section-image{
-    width:400px;
-    flex-grow:1;
-    object-fit: cover;
-  }
-  
+.btn-cta{
+  padding: 8px 16px;
+  border: 2px solid #3A6EA5;
+  color: #3A6EA5;
+  font-weight:bold;
+  text-decoration: none;
+  align-self:flex-start;
+  border-radius: 8px;
+
+}
 
   .places-grid{
-    display:flex;
-    flex-wrap:wrap;
-    gap:1rem;
-  }
 
+    gap:10px;
+
+    /* display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:stretch; */
+
+    display:grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+
+  }
 
   .places-tile{
+    background-color:lightyellow;
     width:200px;
-    
+    text-align:center;
     text-decoration:none;
-    background-color:#FFD1A8
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:8px;
+justify-self: stretch;
+align-self:stretch;
   }
+
+  .places-name{
+    font-weight:bold;
+    font-size:20px;
+  }
+  .places-location{
+    font-size:16;
+  }
+
+  .places-tile p{
+    margin-top:0;
+  }
+
+
 </style>
