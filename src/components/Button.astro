@@ -1,0 +1,22 @@
+---
+
+const {href}=Astro.props;
+
+
+---
+
+
+<!-- Any HTML you want in the component goes here -->
+<a href={href}>
+<slot/>
+</a>
+
+<style>
+    a{
+        display:inline-block;
+        padding:1rem;
+text-decoration: none;
+border:1px solid black
+;
+}
+</style>
