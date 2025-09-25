@@ -1,0 +1,28 @@
+---
+const {title} = Astro.props;
+
+---
+<details>
+    <summary>{title}</summary>
+    <div class="accordion-content">
+    <slot />
+    </div>
+</details>
+<style>
+details{
+    border: 3px solid gray;
+    border-radius: .5rem;
+    max-width:60em;
+}
+
+summary{
+    background-color: lightskyblue;   
+     padding: 1rem;
+
+}
+
+.accordion-content{
+    padding:1rem;
+}
+
+</style>
