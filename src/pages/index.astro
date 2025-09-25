@@ -17,7 +17,13 @@ import { Image } from "astro:assets";
   <SampleContent/>
   <!-- {JSON.stringify(items)} -->
 
-  {items.map(item=>{
+
+
+<!-- We can use a .map() method on an array to run code on each item from an array  -->
+
+<!-- This function will go through each item (given as _item_), then will return a details/summary element for it -->
+
+  {items.map((item)=>{
     return <details>
           <summary>{item.title}</summary>
       {item.quote}
